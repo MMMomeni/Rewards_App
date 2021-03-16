@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+ xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/custom">
+
+        <ImageView
+            android:id="@+id/profileImage1"
+            android:layout_width="171dp"
+            android:layout_height="204dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/profilephoto_createprofile"
+            android:onClick="doGallery"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/default_photo" />
+
+        <EditText
+            android:id="@+id/usernameBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints="Username"
+            android:background="?attr/colorButtonNormal"
+            android:ems="10"
+            android:hint="@string/username_createProfile"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/profileImage1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/passwordBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints="Password"
+            android:background="?attr/colorButtonNormal"
+            android:ems="10"
+            android:hint="@string/password_createProfile"
+            android:inputType="textPersonName|textPassword"
+            app:layout_constraintStart_toEndOf="@+id/profileImage1"
+            app:layout_constraintTop_toBottomOf="@+id/usernameBox1" />
+
+        <EditText
+            android:id="@+id/firstNameBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints="First Name"
+            android:background="?attr/colorButtonNormal"
+            android:ems="10"
+            android:hint="@string/first_name_createProfile"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/profileImage1"
+            app:layout_constraintTop_toBottomOf="@+id/passwordBox1" />
+
+        <EditText
+            android:id="@+id/lastnameBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints="Last Name"
+            android:background="?attr/colorButtonNormal"
+            android:ems="10"
+            android:hint="@string/last_name_createProfile"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/profileImage1"
+            app:layout_constraintTop_toBottomOf="@+id/firstNameBox1" />
+
+        <EditText
+            android:id="@+id/departmentNameBox1"
+            android:layout_width="389dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:autofillHints="Department Name"
+            android:background="?attr/colorButtonNormal"
+            android:ems="10"
+            android:hint="@string/department_name_createProfile"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileImage1" />
+
+        <EditText
+            android:id="@+id/positionTitleBox1"
+            android:layout_width="389dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints="Position Title"
+            android:background="?attr/colorButtonNormal"
+            android:ems="10"
+            android:hint="@string/position_title"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/departmentNameBox1" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/your_story_createProfile"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/positionTitleBox1" />
+
+        <EditText
+            android:id="@+id/storyBox"
+            android:layout_width="391dp"
+            android:layout_height="233dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints="Write your story here"
+            android:background="?attr/colorButtonNormal"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/write_your_story_here_createProfile"
+            android:inputType="textMultiLine|textPersonName|textCapSentences"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
